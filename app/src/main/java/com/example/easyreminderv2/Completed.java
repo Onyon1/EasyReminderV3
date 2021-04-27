@@ -1,4 +1,4 @@
-package com.example.easyreminder;
+package com.example.easyreminderv2;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

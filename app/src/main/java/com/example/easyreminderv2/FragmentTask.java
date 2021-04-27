@@ -1,9 +1,12 @@
-package com.example.easyreminder;
+package com.example.easyreminderv2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentTask extends Fragment {
+public class    FragmentTask extends Fragment {
     View v;
     private RecyclerView myrecyclerview;
     private List<Task>firsttask;
@@ -29,6 +32,16 @@ public class FragmentTask extends Fragment {
         RecyclerViewAdapterTask recyclerAdapter = new RecyclerViewAdapterTask(getContext(),firsttask);
         myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         myrecyclerview.setAdapter(recyclerAdapter);
+
+        ImageButton btnAdd = (ImageButton) v.findViewById(R.id.btnAdd);
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),AddTaskActivity.class));
+            }
+        });
+
+
         return v;
     }
 

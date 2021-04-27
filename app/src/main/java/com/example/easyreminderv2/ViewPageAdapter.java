@@ -1,4 +1,4 @@
-package com.example.easyreminder;
+package com.example.easyreminderv2;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

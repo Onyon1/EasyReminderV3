@@ -1,4 +1,4 @@
-package com.example.easyreminder;
+package com.example.easyreminderv2;
 
 import org.junit.Test;
 

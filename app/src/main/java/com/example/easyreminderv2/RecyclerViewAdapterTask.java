@@ -1,4 +1,4 @@
-package com.example.easyreminder;
+package com.example.easyreminderv2;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-class RecyclerViewAdapterCompleted extends RecyclerView.Adapter<RecyclerViewAdapterCompleted.MyViewHolder> {
+ public class RecyclerViewAdapterTask extends RecyclerView.Adapter<RecyclerViewAdapterTask.MyViewHolder> {
 
     Context mContext;
     List<Task> mData;
 
-    public RecyclerViewAdapterCompleted(Context mContext, List<Task> mData) {
+    public RecyclerViewAdapterTask(Context mContext, List<Task> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -26,7 +26,7 @@ class RecyclerViewAdapterCompleted extends RecyclerView.Adapter<RecyclerViewAdap
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v ;
-        v = LayoutInflater.from(mContext).inflate(R.layout.item_completed,parent,false);
+        v = LayoutInflater.from(mContext).inflate(R.layout.item_task,parent,false);
         MyViewHolder vHolder = new MyViewHolder(v);
         return vHolder;
     }
