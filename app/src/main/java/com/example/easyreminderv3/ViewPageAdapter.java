@@ -1,4 +1,4 @@
-package com.example.easyreminderv2;
+package com.example.easyreminderv3;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.example.easyreminderv2;
+package com.example.easyreminderv3;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
